@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="travel_recommendation.js"></script>
+    <title>About Us - Robert's Travel Recommendations</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Airplane_silhouette.svg/400px-Airplane_silhouette.svg.png" alt="Travel Logo">
+            <span>Robert's Travel Recommendations</span>
+        </div>
+        
+        <div class="navigation-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="search-section">
+            <input type="text" placeholder="Search destinations..." onkeypress="if(event.key === 'Enter') search()">
+            <button onclick="search()" class="btn btn-primary">Search</button>
+            <button onclick="reset()" class="btn btn-secondary">Reset</button>
+        </div>
+    </nav>
+
+    <div class="results-container">
+        <div class="results-grid"></div>
+    </div>    
+
+    <div class="main-container">
+        <div class="social-sidebar">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://freepnglogo.com/images/all_img/1725374683twitter-x-logo.png" alt="X">
+            </a>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-section">
+                <h1>About Us</h1>
+                <p>As a lifelong dreamer with an insatiable wanderlust, I've created this platform to share my travel aspirations with the world. While my corporate responsibilities keep me grounded, this website serves as my window to global adventures through the experiences of fellow travelers. By sharing these carefully curated destinations, I hope to inspire others to explore the places I dream of visiting, allowing me to experience the world through their journeys and stories.</p>
+            </div>
+
+            <div class="team-section">
+                <div class="team-header">
+                    <h2>Our Team</h2>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="CEO">
+                    <h3>James Mitchell</h3>
+                    <h4>CEO</h4>
+                    <p>Swears by a classic gin and tonic at cruising altitude, garnished with lime.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="CTO">
+                    <h3>Sarah Chen</h3>
+                    <h4>CTO</h4>
+                    <p>Never boards a flight without ordering her signature sparkling water with a twist of lemon.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="CMO">
+                    <h3>Marcus Rodriguez</h3>
+                    <h4>CMO</h4>
+                    <p>Enjoys a bold red wine while crossing time zones, preferably a Cabernet Sauvignon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

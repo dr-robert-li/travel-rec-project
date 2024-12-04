@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="travel_recommendation.js"></script>
+    <title>Contact Us - Robert's Travel Recommendations</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Airplane_silhouette.svg/400px-Airplane_silhouette.svg.png" alt="Travel Logo">
+            <span>Robert's Travel Recommendations</span>
+        </div>
+        
+        <div class="navigation-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="search-section">
+            <input type="text" placeholder="Search destinations..." onkeypress="if(event.key === 'Enter') search()">
+            <button onclick="search()" class="btn btn-primary">Search</button>
+            <button onclick="reset()" class="btn btn-secondary">Reset</button>
+        </div>
+    </nav>
+
+    <div class="results-container">
+        <div class="results-grid"></div>
+    </div>       
+
+    <div class="main-container">
+        <div class="social-sidebar">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://freepnglogo.com/images/all_img/1725374683twitter-x-logo.png" alt="X">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLcBrDHgOj0B_qrNTygXlcjOPlRfGOBqZrw&s" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
